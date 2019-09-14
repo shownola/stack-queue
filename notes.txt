@@ -19,3 +19,21 @@ POP - can only remove an item on top of the stack (aka head...) - pop = O(1)
 This mode of operations is known as LIFO - Last In, First Out
 PEEK - view the value on top of the stack and peek = O(1)
 IS_EMPTY - checks to see if the stack is empty. If the pointer is pointing to an item or None.
+
+QUEUES:
+With queues we will be tracking the tails in addition to the head/stack_pointer. To start you will have the head and the tail both pointing to None. If there is an integer then it needs to be converted to a Node. To add you will add it to the tail as in the linked lists.
+
+Queue:
+Add Operation = O(1) - Add to the tail
+Remove = O(1) - Remove from the head
+
+This mode of operation is FIFO - First In First Out
+
+Remove from Head
+Set current to Head - make Head point to current.next - make current.next point to None - Return current.data
+
+When thinking of Queues:
+- Queue at cafe - customers form a line, the ones who are in front of the line get served first - in order.
+- Queue at customer service - customers who arrive later are served later - in order
+- Queue at bank, queue at supermarket cashier, etc.
+- When thinking about a queue, think about lines of customers waiting and how they are usually helped.
